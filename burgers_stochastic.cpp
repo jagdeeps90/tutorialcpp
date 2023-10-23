@@ -36,7 +36,7 @@ VectorXd generateBurgersNoise(double alpha, int m) {
     VectorXcd x1ft(m/2 + 1);
     VectorXd x1(m);
     
-    VectorXd x =  (VectorXd::Random(m));
+    VectorXd x =  sqrt(m) * (VectorXd::Random(m));
     /*
     for (int i = 0; i < m; i++) {
         x(i) = sqrt(m)*dist(gen);
